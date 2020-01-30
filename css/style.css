@@ -7,6 +7,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  position: relative;
 }
 
 .navigation {
@@ -45,4 +46,46 @@ body {
 .nav > li > a {
   text-decoration: none;
   color: #494949;
+}
+
+.banner {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 260px;
+  padding-bottom: 285px;
+}
+.banner::after {
+  background-image: url(../img/pizza.png);
+  position: absolute;
+}
+.title {
+  font-size: 50px;
+  margin-bottom: 23px;
+}
+.description {
+  font-size: 25px;
+  margin-bottom: 30px;
+  max-width: 570px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+}
+.pizza {
+  position: absolute;
+  right: 0;
+  top: -230px;
+}
+.btn {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  padding: 16px 0;
+  max-width: 190px;
+  text-align: center;
 }
